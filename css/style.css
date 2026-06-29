@@ -417,6 +417,54 @@ section { padding: 7rem 1.5rem; }
 .project__links a:hover { border-color: currentColor; color: var(--teal-deep); }
 
 /* =========================================================
+   VIDEO GALLERY
+   ========================================================= */
+.video-gallery {
+  margin-top: 1.4rem;
+}
+
+.video-gallery__label {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink-soft);
+  display: block;
+  margin-bottom: 0.8rem;
+}
+
+.video-gallery__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.video-item {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.6rem 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  background: var(--white);
+  transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.video-item:hover {
+  border-color: var(--magenta);
+  color: var(--magenta);
+  transform: translateX(4px);
+}
+
+.video-item__icon {
+  font-size: 0.7rem;
+  color: var(--magenta);
+  flex-shrink: 0;
+}
+
+/* =========================================================
    CONTACT
    ========================================================= */
 .contact__grid {
