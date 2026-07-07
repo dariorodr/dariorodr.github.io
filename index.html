@@ -1,221 +1,334 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Darío Rodríguez — Portfolio</title>
-<meta name="description" content="Darío Rodríguez, desarrollador fullstack junior autodidacta. Python, React, JavaScript y SQL.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Darío Rodríguez — Portfolio</title>
+    <meta
+      name="description"
+      content="Darío Rodríguez, desarrollador fullstack junior autodidacta. Python, React, JavaScript y SQL."
+    />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
 
-<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
-<nav class="nav" id="nav">
-  <a href="#top" class="nav__mark">DR</a>
-  <div class="nav__links">
-    <a href="#sobre-mi">Sobre mí</a>
-    <a href="#proyectos">Proyectos</a>
-    <a href="#contacto">Contacto</a>
-  </div>
-</nav>
-
-<main>
-
-  <!-- ===================== HERO ===================== -->
-  <header class="hero" id="top">
-    <canvas id="constellation"></canvas>
-
-    <div class="hero__inner">
-      <p class="eyebrow">Posadas, Misiones, Argentina</p>
-      <h1 class="hero__name">Darío<br>Rodríguez</h1>
-      <p class="hero__role">Desarrollador Fullstack Junior · Autodidacta</p>
-      <p class="hero__tagline">
-        Conecto bases de datos, lógica de servidor e interfaces en proyectos
-        completos, de punta a punta — y aprendo cada pieza nueva en el camino.
-      </p>
-      <div class="hero__actions">
-        <a href="#proyectos" class="btn btn--primary">Ver proyectos</a>
-        <a href="#contacto" class="btn btn--ghost">Contactarme</a>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="nav" id="nav">
+      <a href="#top" class="nav__mark">DR</a>
+      <div class="nav__links">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
       </div>
-    </div>
+    </nav>
 
-    <a href="#sobre-mi" class="scroll-cue" aria-label="Bajar a la siguiente sección">
-      <span></span>
-    </a>
-  </header>
+    <main>
+      <!-- ===================== HERO ===================== -->
+      <header class="hero" id="top">
+        <canvas id="constellation"></canvas>
 
-  <!-- ===================== SOBRE MÍ ===================== -->
-  <section class="about" id="sobre-mi">
-    <div class="section-head">
-      <span class="section-tag">01 — Sobre mí</span>
-    </div>
+        <div class="hero__inner">
+          <p class="eyebrow">Posadas, Misiones, Argentina</p>
+          <h1 class="hero__name">Darío<br />Rodríguez</h1>
+          <p class="hero__role">Desarrollador Fullstack Junior · Autodidacta</p>
+          <p class="hero__tagline">
+            Conecto bases de datos, lógica de servidor e interfaces en proyectos
+            completos, de punta a punta — y aprendo cada pieza nueva en el
+            camino.
+          </p>
+          <div class="hero__actions">
+            <a href="#proyectos" class="btn btn--primary">Ver proyectos</a>
+            <a href="#contacto" class="btn btn--ghost">Contactarme</a>
+          </div>
+        </div>
 
-    <div class="about__grid">
-      <div class="about__text">
-        <p>
-          Soy desarrollador fullstack autodidacta, construyendo proyectos reales
-          desde Posadas, Misiones. Aprendí a programar resolviendo problemas
-          concretos: un sistema para gestionar reservas, una base de datos que
-          no cerraba, un deploy que se caía a las tres de la mañana.
-        </p>
-        <p>
-          Me interesa el recorrido completo de un producto — desde el modelo
-          de datos hasta el último detalle de la interfaz — y disfruto
-          particularmente la parte de hacer que todas las piezas se
-          conecten entre sí.
-        </p>
-        <a href="assets/cv.pdf" class="cv-link" download>
-          <span>Descargar CV</span>
-          <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-            <path d="M7 1V10M7 10L3.5 6.5M7 10L10.5 6.5M1.5 12.5H12.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
+        <a
+          href="#sobre-mi"
+          class="scroll-cue"
+          aria-label="Bajar a la siguiente sección"
+        >
+          <span></span>
         </a>
-      </div>
+      </header>
 
-      <div class="about__skills">
-        <span class="skills-label">Tecnologías</span>
-        <ul class="skills-grid">
-          <li><span class="dot dot--teal"></span>Python</li>
-          <li><span class="dot dot--magenta"></span>JavaScript</li>
-          <li><span class="dot dot--coral"></span>React</li>
-          <li><span class="dot dot--teal"></span>Flask</li>
-          <li><span class="dot dot--magenta"></span>Django</li>
-          <li><span class="dot dot--coral"></span>SQL · MySQL</li>
-          <li><span class="dot dot--teal"></span>HTML &amp; CSS</li>
-          <li><span class="dot dot--magenta"></span>Git</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== PROYECTOS ===================== -->
-  <section class="projects" id="proyectos">
-    <div class="section-head">
-      <span class="section-tag">02 — Proyectos</span>
-      <h2>Cosas que construí</h2>
-    </div>
-
-    <!-- Proyecto 1 -->
-    <article class="project">
-      <div class="project__visual project__visual--teal">
-         <img src="assets/projects/gestion-canchas.png" alt="Captura del sistema de Gestión de Canchas" class="project__screenshot">
-      </div>
-      <div class="project__content">
-        <span class="project__index">01</span>
-        <h3>Gestión de Canchas</h3>
-        <p>
-          Sistema de reservas para canchas deportivas: turnos, disponibilidad
-          horaria, panel administrativo y reportes de recaudación, con
-          autenticación de usuarios y roles diferenciados.
-        </p>
-        <ul class="tech-tags">
-          <li>Python</li><li>Flask</li><li>MySQL</li><li>SQLAlchemy</li><li>Bootstrap</li>
-        </ul>
-        <div class="project__links">
-          <a href="https://github.com/dariorodr/Segundo-proyecto" target="_blank" rel="noopener">Código →</a>
-          <a href="https://segundo-proyecto-production-a2c0.up.railway.app" target="_blank" rel="noopener">Demo en vivo →</a>
+      <!-- ===================== SOBRE MÍ ===================== -->
+      <section class="about" id="sobre-mi">
+        <div class="section-head">
+          <span class="section-tag">01 — Sobre mí</span>
         </div>
-      </div>
-    </article>
 
-    <!-- Proyecto 2 -->
-    <article class="project project--reverse">
-      <div class="project__visual project__visual--magenta">
-        <img src="assets/projects/cocina-temporada.png" alt="Captura de Cocina de Temporada" class="project__screenshot">
-      </div>
-      <div class="project__content">
-        <span class="project__index">02</span>
-        <h3>Cocina de Temporada</h3>
-        <p>
-          Landing page interactiva sobre productos de estación: calendario de
-          temporada, fichas de productos con recetas, y generación de recetas
-          nuevas con IA a través de la API de Hugging Face.
-        </p>
-        <ul class="tech-tags">
-          <li>Python</li><li>Django</li><li>MySQL</li><li>Cloudinary</li><li>Hugging Face API</li>
-        </ul>
-        <div class="project__links">
-          <a href="https://github.com/dariorodr/tercer-proyecto" target="_blank" rel="noopener">Código →</a>
+        <div class="about__grid">
+          <div class="about__text">
+            <p>
+              Soy desarrollador fullstack autodidacta, construyendo proyectos
+              reales desde Posadas, Misiones. Aprendí a programar resolviendo
+              problemas concretos: un sistema para gestionar reservas, una base
+              de datos que no cerraba, un deploy que se caía a las tres de la
+              mañana.
+            </p>
+            <p>
+              Me interesa el recorrido completo de un producto — desde el modelo
+              de datos hasta el último detalle de la interfaz — y disfruto
+              particularmente la parte de hacer que todas las piezas se conecten
+              entre sí.
+            </p>
+            <a href="assets/cv.pdf" class="cv-link" download>
+              <span>Descargar CV</span>
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <path
+                  d="M7 1V10M7 10L3.5 6.5M7 10L10.5 6.5M1.5 12.5H12.5"
+                  stroke="currentColor"
+                  stroke-width="1.4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+
+          <div class="about__skills">
+            <span class="skills-label">Tecnologías</span>
+            <ul class="skills-grid">
+              <li><span class="dot dot--teal"></span>Python</li>
+              <li><span class="dot dot--magenta"></span>JavaScript</li>
+              <li><span class="dot dot--coral"></span>React</li>
+              <li><span class="dot dot--teal"></span>Flask</li>
+              <li><span class="dot dot--magenta"></span>Django</li>
+              <li><span class="dot dot--coral"></span>SQL · MySQL</li>
+              <li><span class="dot dot--teal"></span>HTML &amp; CSS</li>
+              <li><span class="dot dot--magenta"></span>Git</li>
+            </ul>
+          </div>
         </div>
-        <div class="video-gallery">
-          <span class="video-gallery__label">Demo en video</span>
-          <div class="video-gallery__list">
-            <a href="https://youtu.be/6xPM86GpuFk" target="_blank" rel="noopener" class="video-item">
-              <span class="video-item__icon">▶</span>
-              <span>Inicio y navegación</span>
+      </section>
+
+      <!-- ===================== PROYECTOS ===================== -->
+      <section class="projects" id="proyectos">
+        <div class="section-head">
+          <span class="section-tag">02 — Proyectos</span>
+          <h2>Cosas que construí</h2>
+        </div>
+
+        <!-- Proyecto 1 -->
+        <article class="project">
+          <div class="project__visual project__visual--teal">
+            <img
+              src="assets/projects/gestion-canchas.png"
+              alt="Captura del sistema de Gestión de Canchas"
+              class="project__screenshot"
+            />
+          </div>
+          <div class="project__content">
+            <span class="project__index">01</span>
+            <h3>Gestión de Canchas</h3>
+            <p>
+              Sistema de reservas para canchas deportivas: turnos,
+              disponibilidad horaria, panel administrativo y reportes de
+              recaudación, con autenticación de usuarios y roles diferenciados.
+            </p>
+            <ul class="tech-tags">
+              <li>Python</li>
+              <li>Flask</li>
+              <li>MySQL</li>
+              <li>SQLAlchemy</li>
+              <li>Bootstrap</li>
+            </ul>
+            <div class="project__links">
+              <a
+                href="https://github.com/dariorodr/Segundo-proyecto"
+                target="_blank"
+                rel="noopener"
+                >Código →</a
+              >
+              <a
+                href="https://segundo-proyecto-production-a2c0.up.railway.app"
+                target="_blank"
+                rel="noopener"
+                >Demo en vivo →</a
+              >
+            </div>
+          </div>
+        </article>
+
+        <!-- Proyecto 2 -->
+        <article class="project">
+          <div class="project__visual project__visual--coral">
+            <img
+              src="assets/projects/saywood.png"
+              alt="Captura de Saywood landing page"
+              class="project__screenshot"
+            />
+          </div>
+          <div class="project__content">
+            <span class="project__index">03</span>
+            <h3>Saywood</h3>
+            <p>
+              Landing page para una empresa fabricante de muebles de melamina.
+              Diseño moderno con navegación por secciones, catálogo de productos
+              y puntos de venta, construida con tecnologías frontend más actuales.
+            </p>
+            <ul class="tech-tags">
+              <li>React</li>
+              <li>Vite</li>
+              <li>JavaScript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+            <div class="project__links">
+              <a
+                href="https://demo01bimplace.com.ar/"
+                target="_blank"
+                rel="noopener"
+                >Demo en vivo →</a
+              >
+            </div>
+          </div>
+        </article>
+
+        <!-- Proyecto 3 -->
+        <article class="project project--reverse">
+          <div class="project__visual project__visual--magenta">
+            <img
+              src="assets/projects/cocina-temporada.png"
+              alt="Captura de Cocina de Temporada"
+              class="project__screenshot"
+            />
+          </div>
+          <div class="project__content">
+            <span class="project__index">02</span>
+            <h3>Cocina de Temporada</h3>
+            <p>
+              Landing page interactiva sobre productos de estación: calendario
+              de temporada, fichas de productos con recetas, y generación de
+              recetas nuevas con IA a través de la API de Hugging Face.
+            </p>
+            <ul class="tech-tags">
+              <li>Python</li>
+              <li>Django</li>
+              <li>MySQL</li>
+              <li>Cloudinary</li>
+              <li>Hugging Face API</li>
+            </ul>
+            <div class="project__links">
+              <a
+                href="https://github.com/dariorodr/tercer-proyecto"
+                target="_blank"
+                rel="noopener"
+                >Código →</a
+              >
+            </div>
+            <div class="video-gallery">
+              <span class="video-gallery__label">Demo en video</span>
+              <div class="video-gallery__list">
+                <a
+                  href="https://youtu.be/6xPM86GpuFk"
+                  target="_blank"
+                  rel="noopener"
+                  class="video-item"
+                >
+                  <span class="video-item__icon">▶</span>
+                  <span>Inicio y navegación</span>
+                </a>
+                <a
+                  href="https://youtu.be/dpK7CVfTE2M"
+                  target="_blank"
+                  rel="noopener"
+                  class="video-item"
+                >
+                  <span class="video-item__icon">▶</span>
+                  <span>Detalle del producto</span>
+                </a>
+                <a
+                  href="https://youtu.be/o3sJJk7NRMk"
+                  target="_blank"
+                  rel="noopener"
+                  class="video-item"
+                >
+                  <span class="video-item__icon">▶</span>
+                  <span>Buscador y calendario interactivo</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- ===================== CONTACTO ===================== -->
+      <section class="contact" id="contacto">
+        <div class="section-head">
+          <span class="section-tag">03 — Contacto</span>
+          <h2>Hablemos</h2>
+        </div>
+
+        <div class="contact__grid">
+          <p class="contact__intro">
+            Si tenés una idea, un proyecto o simplemente una pregunta técnica,
+            este formulario llega directo a mi correo.
+          </p>
+
+          <form class="contact__form" id="contact-form">
+            <div class="field">
+              <label for="name">Nombre</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="field">
+              <label for="message">Mensaje</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary">
+              Enviar mensaje
+            </button>
+            <p class="form-status" id="form-status" aria-live="polite"></p>
+          </form>
+
+          <div class="contact__direct">
+            <a href="mailto:dariodis97@gmail.com" class="direct-link">
+              <span class="direct-label">Email</span>
+              <span>dariodis97@gmail.com</span>
             </a>
-            <a href="https://youtu.be/dpK7CVfTE2M" target="_blank" rel="noopener" class="video-item">
-              <span class="video-item__icon">▶</span>
-              <span>Detalle del producto</span>
+            <a
+              href="https://github.com/dariorodr"
+              target="_blank"
+              rel="noopener"
+              class="direct-link"
+            >
+              <span class="direct-label">GitHub</span>
+              <span>github.com/dariorodr</span>
             </a>
-            <a href="https://youtu.be/o3sJJk7NRMk" target="_blank" rel="noopener" class="video-item">
-              <span class="video-item__icon">▶</span>
-              <span>Buscador y calendario interactivo</span>
+            <a
+              href="https://www.linkedin.com/in/dar%C3%ADo-rodriguez-327114378/"
+              target="_blank"
+              rel="noopener"
+              class="direct-link"
+            >
+              <span class="direct-label">LinkedIn</span>
+              <span>Darío Rodríguez</span>
             </a>
           </div>
         </div>
-      </div>
-    </article>
-  </section>
+      </section>
+    </main>
 
-  <!-- ===================== CONTACTO ===================== -->
-  <section class="contact" id="contacto">
-    <div class="section-head">
-      <span class="section-tag">03 — Contacto</span>
-      <h2>Hablemos</h2>
-    </div>
+    <footer class="footer">
+      <span>Darío Rodríguez — Posadas, Misiones</span>
+      <span>2026</span>
+    </footer>
 
-    <div class="contact__grid">
-      <p class="contact__intro">
-        Si tenés una idea, un proyecto o simplemente una pregunta técnica,
-        este formulario llega directo a mi correo.
-      </p>
-
-      <form class="contact__form" id="contact-form">
-        <div class="field">
-          <label for="name">Nombre</label>
-          <input type="text" id="name" name="name" required>
-        </div>
-        <div class="field">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-        <div class="field">
-          <label for="message">Mensaje</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
-        </div>
-        <button type="submit" class="btn btn--primary">Enviar mensaje</button>
-        <p class="form-status" id="form-status" aria-live="polite"></p>
-      </form>
-
-      <div class="contact__direct">
-        <a href="mailto:dariodis97@gmail.com" class="direct-link">
-          <span class="direct-label">Email</span>
-          <span>dariodis97@gmail.com</span>
-        </a>
-        <a href="https://github.com/dariorodr" target="_blank" rel="noopener" class="direct-link">
-          <span class="direct-label">GitHub</span>
-          <span>github.com/dariorodr</span>
-        </a>
-        <a href="https://www.linkedin.com/in/dar%C3%ADo-rodriguez-327114378/" target="_blank" rel="noopener" class="direct-link">
-          <span class="direct-label">LinkedIn</span>
-          <span>Darío Rodríguez</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<footer class="footer">
-  <span>Darío Rodríguez — Posadas, Misiones</span>
-  <span>2026</span>
-</footer>
-
-<script src="js/script.js"></script>
-</body>
+    <script src="js/script.js"></script>
+  </body>
 </html>
