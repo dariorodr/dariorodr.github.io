@@ -87,19 +87,39 @@ requestAnimationFrame(step);
 /* =========================================================
    FORMULARIO DE CONTACTO
    ========================================================= */
-const form = document.getElementById('contact-form');
-const status = document.getElementById('form-status');
+const form = document.getElementById("contact-form");
+const status = document.getElementById("form-status");
 
-form.addEventListener('submit', (e) => {
+form.addEventListener("submit", async (e) => {
   e.preventDefault();
 
-  const name = form.name.value.trim();
-  const email = form.email.value.trim();
-  const message = form.message.value.trim();
+  const data = {
+    name: form.name.value.trim(),
+    email: form.email.value.trim(),
+    message: form.message.value.trim(),
+  };
 
-  const subject = encodeURIComponent(`Contacto desde el portfolio — ${name}`);
-  const body = encodeURIComponent(`${message}\n\n— ${name} (${email})`);
+  status.textContent = "Enviando mensaje...";
 
-  window.location.href = `mailto:dariodis97@gmail.com?subject=${subject}&body=${body}`;
-  status.textContent = 'Se abrió tu cliente de correo con el mensaje listo para enviar.';
+  try {
+    const response = await fetch("https://formspree.io/f/mjgqqvgv", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify(data),
+    });
+
+    if (response.ok) {
+      status.textContent = "✅ ¡Mensaje enviado correctamente!";
+      form.reset();
+    } else {
+      status.textContent =
+        "❌ Ocurrió un error al enviar el mensaje.";
+    }
+  } catch (error) {
+    status.textContent =
+      "❌ No se pudo conectar con el servidor.";
+  }
 });
