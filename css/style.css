@@ -339,6 +339,9 @@ section { padding: 7rem 1.5rem; }
 .project__visual--magenta {
   background: linear-gradient(160deg, #FCE3ED, #F9C2D9 60%, #F5A8C9);
 }
+.project__visual--coral {
+  background: linear-gradient(160deg, #FDE8DC, #FAD4C0 60%, #F7BFA5);
+}
 
 .mockup {
   background: var(--white);
