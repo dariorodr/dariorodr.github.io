@@ -123,7 +123,7 @@ section { padding: 7rem 1.5rem; }
   min-height: 100svh;
   display: flex;
   align-items: center;
-  overflow: hidden;
+  overflow: visible;
   padding: 0 1.5rem;
 }
 
