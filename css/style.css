@@ -154,7 +154,7 @@ section { padding: 7rem 1.5rem; }
 .hero__name {
   font-size: clamp(3rem, 9vw, 6.4rem);
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 0.9;
   background: linear-gradient(100deg, var(--ink) 40%, var(--teal-deep) 75%, var(--magenta) 100%);
   -webkit-background-clip: text;
   background-clip: text;
