@@ -474,6 +474,15 @@ section { padding: 7rem 1.5rem; }
   flex-shrink: 0;
 }
 
+.video-item--coral:hover {
+  border-color: var(--coral);
+  color: var(--coral);
+}
+
+.video-item--coral .video-item__icon {
+  color: var(--coral);
+}
+
 /* =========================================================
    CONTACT
    ========================================================= */
